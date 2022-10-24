@@ -1,50 +1,61 @@
-//Variavéis item 1
-const titulo1 = "As Telefonistas"; //Carasterística string
-const lancamento1 = 2017;          //Carasterística number
-const genero1 = ["Drama", "Telenovela", "Obra de Época"];                //Carasterística Array
-const finalizada1 = true;          //Carasterística boolean
+//As os itens que possuiam variáveis foram transformados em objetos.
+//Obs: estou excluindo o objeto 2, pois nos exercíos propostos até aqui só foram usados 3 itens, exclui o 2 pois era o mais antigo essa foi o critério, e coloquei essas 4 séries, pois são minhas preferidas. 
 
-// //Variavéis item 2
-// const titulo2 = "Friends";         //Carasterística string
-// const lancamento2 = 1994;          //Carasterística number
-// const genero2 = ["Comédia", "Romance","Sitcom"];                          //Carasterística Array
-// const finalizada2 = true;          //Carasterística boolean
+const objeto1 = {
+    titulo : "As Telefonistas",
+    lancamento : 2017,
+    genero : ["Drama", "Telenovela", "Obra de Época"],
+    finalizada : true,
+}
 
-
-//Variavéis item 3
-const titulo3 = "Grey's Anatomy";  //Carasterística string
-const lancamento3 = 2004;          //Carasterística number
-const genero3 = ["Drama", "Romance", "Humoe ácido", "Comédia dramática"];  //Carasterística Array
-const finalizada3 = false;         //Carasterística boolean
+// const objeto2 = {
+//     titulo : "Friends",
+//     lancamento : 1994,
+//     genero : ["Comédia", "Romance","Sitcom"],
+//     finalizada : true,
+// }
 
 
-//Variavéis item 4
-const titulo4 = "La Casa de Papel"; //Carasterística string
-const lancamento4 = 2017;          //Carasterística number
-const genero4 = ["Assalto", "Suspense", "Crime", "Romance"];              //Carasterística Array
-const finalizada4 = true;          //Carasterística boolean
 
-const somaLancamento = (lancamento1 + lancamento3 + lancamento4) / 3;  //Aqui somamos as médias e dividimos pela quantidade de itens somados no caso /3.
-console.log("A média da soma dos anos de lançamentos é?", somaLancamento);
-
-console.log("As séries estão finalizadas?", finalizada1, finalizada3, finalizada4); //Apenas um console.log para visualizarmos se as caracteristicas boolean são verdadeiras.
+const objeto3 = {
+    titulo : "Grey's Anatomy",
+    lancamento : 2004,
+    genero : ["Drama", "Romance", "Humoe ácido", "Comédia dramática"],
+    finalizada : false,
+}
 
 
-//Imprimindo as informações no console.log prefiro usar ${} para sinalizar as variáveis.
-const titulo1ToUpperCase = titulo1.toUpperCase();
-console.log(`${titulo1ToUpperCase}
-Ano de lançamento: ${lancamento1} 
-Gênero: ${genero1}
-Está finalizada?:${finalizada1}`)
 
-const titulo3ToUpperCase = titulo3.toUpperCase();
-console.log(`${titulo3ToUpperCase}
-Ano de lançamento: ${lancamento3} 
-Gênero: ${genero3}
-Está finalizada?:${finalizada3}`)
+const objeto4 = {
+    titulo : "La Casa de Papel",
+    lancamento : 2017,
+    genero : ["Assalto", "Suspense", "Crime", "Romance"],
+    finalizada : true,
+}
 
-const titulo4ToUpperCase = titulo4.toUpperCase();
-console.log(`${titulo4ToUpperCase}
-Ano de lançamento: ${lancamento4} 
-Gênero: ${genero4}
-Está finalizada?:${finalizada4}`)
+//Criei um Array que no momento está vazia, mas tem a finalidade de guardar os objetos.
+const listaObjeto= []
+
+//Adicionei objetos os objetos a lista vazia criada anteriormente, porém só foram adcionados ao Array os objetos que estão finalizados, ou seja a propriedade booleana TRUE foi a condição aplicada.
+
+if (objeto1.finalizada === true) {
+    listaObjeto.push(objeto1)
+}else{
+    console.log(`Atenção! A Série ${objeto1.titulo} Não está finalizada!`)
+};
+
+if (objeto3.finalizada === true) {
+    listaObjeto.push(objeto3)
+}else{
+    console.log(`Atenção! A Série ${objeto3.titulo} Não está finalizada!`)
+};
+
+if (objeto4.finalizada === true) {
+    listaObjeto.push(objeto4)
+}else{
+    console.log(`Atenção! A Série ${objeto4.titulo} Não está finalizada!`)
+};
+
+console.log("Minhas Séries", listaObjeto);
+
+
