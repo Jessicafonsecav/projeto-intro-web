@@ -5,9 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeh'sFlix</title>
+    <link rel="icon" href="./assents/icon.jpg">
+    <link rel="stylesheet" href="./style.css">
     <script src="index.js"></script>
 </head>
+<!-- Criando um cabeçalho e um footer, resolvi colocar só uma imagem-->
+<header> 
+    <img src="./assents/logo.png" 
+         alt="Logo Jeh'sFlix" 
+         width="400px"
+         height="100px">
+ </header>
 <body>
+    <div class="buscar">
+        <input type="text" name ="text "placeholder="Buscar série"/>
+        <button id="btn-busca">Vamos lá!</button>
+    </div>
+     
+    <section class="serie-disponiveis">
+        <h2>Séries Disponíveis!</h2>
+    </section>
     
+    <main>
+     <section class="minhas-series">
+          <section>
+            <img id="imagem-astelefonistas" 
+            src="./assents/imagem-as-telefonistas.jpg"
+            alt="imagem da série As Telefonistas."
+            width="200px"
+            height="300px">
+         <ul>
+            <li>Titulo:<a href="https://pt.wikipedia.org/wiki/Las_chicas_del_cable" target="-blank">As Telefonistas</a></li>
+            <li>Lançamento: 2017</li>
+            <li>Gênero: Drama, Telenovela, Obra de Época.</li>
+            <li>Está Finalizada: True </li>
+         </ul>
+        </section> 
+          
+          <section>
+            <img id="imagem-friends" 
+            src="./assents/imagem-friends.jpg"
+            alt="imagem da série Friends."
+            width="200px"
+            height="300px">
+         <ul>
+             <li>Titulo:<a href="https://pt.wikipedia.org/wiki/Friends" target="-blank">Friends</a></li>
+             <li>Lançamento: 1994</li>
+             <li>Gênero: Comédia, Romance, Sitcom.</li>
+             <li>Está Finalizada: True </li>
+         </ul>
+        </section>
+
+        <section>
+            <img id="imagem-greys" 
+            src="./assents/imagem-greys-anatomy.jpg"
+            alt="imagem da série Grey's Anatomy."
+            width="200px"
+            height="300px">
+         <ul>
+             <li>Titulo:<a href="https://pt.wikipedia.org/wiki/Grey%27s_Anatomy" target="-blank">Grey's Anatomy</a></li>
+             <li>Lançamento: 2004</li>
+             <li>Gênero: Drama, Romance, Humoe ácido, Comédia dramática.</li>
+             <li>Está Finalizada: False </li>
+         </ul>
+        </section>
+
+        <section>
+            <img id="imagem-lcdp" 
+            src="./assents/imagem-la-casa-de-papel.jpg"
+            alt="imagem da série La casa de Papel."
+            width="200px"
+            height="300px">
+         <ul>
+             <li>Titulo:<a href="https://pt.wikipedia.org/wiki/La_casa_de_papel" target="-blank">La Casa de Papel</a></li>
+             <li>Lançamento: 2017</li>
+             <li>Gênero: Assalto, Suspense, Crime, Romance.</li>
+             <li>Está Finalizada: True </li>
+         </ul>
+        </section>
+     </section>
+
+    </main>
+
+    <footer>
+        <h3>“Saber não é o bastante, devemos aplicar. Disposição não é o suficiente, devemos fazer.” – Johann Wolfgang von Goethe</h3>
+        <article>
+            <h4>Projeto Desenvolvimento WEB - Labenu </h4>
+            <p>Turma AMMAL - Jéssica Fonseca</p>
+            <p><a href="https://github.com/JessicaVianaF" target="-blank">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/jessicafviana/" target="-blank">LinkedIn</a></p>
+        </article>
+    </footer>
+    
+
 </body>
 </html>
