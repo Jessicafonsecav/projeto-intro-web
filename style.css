@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-image: -webkit-repeating-linear-gradient(rgb(23, 23, 26), rgb(51, 49, 59), rgb(85, 8, 8));
+    border-bottom: 1vh solid black;
+}
+
+footer {
+    background-color: black;
+    padding: 10px; 
+    color: rgb(221, 6, 6);
+    
+}
